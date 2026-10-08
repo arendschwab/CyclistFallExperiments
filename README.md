@@ -16,3 +16,73 @@ attached as "reijne2025model.pdf"
 The Data is stored in a Matlab file "Datav3.mat" (2.1 GB) This large file can be found under the 'Releases' in the right pane of the repository page and downloaded from there.
 
 Data description for the Matlab file "Datav3.mat" (2.1 GB)
+
+-participant: participant id ranging from 1 to 24.
+-velocity: desired velocity in (m/s) of the treadmill.
+-cadence: rider pedalling cadence in (rpm)
+-pull: pull id ranging from 0 to 24(max), pull 0 is free cycling and no pull force.
+-force: desired pull force (N) at the handle bar left(backwards) and right(forwards).
+-outcome: 0 = no fall or 1 = fall.
+-t: time (sec), pull is at t = 0.
+-v: velocity (m/s) of the bicycle measured from the rear wheel rotation rate.
+-phi: lean angle (rad) of the rear frame, about the forward axis, zero when upright, positive to the right.
+-delta: steer angle (rad) of the front frame with respect to the rear frame, about the steer axis, zero when straight ahead, positive to the right.
+-phiDot: lean rate (rad/s) of the rear frame, positive to the right.
+-deltaDot: steer rate (rad/s) of the front frame with respect to the rear frame, positive to the right.
+-psi: yaw angle (rad) of the rear frame of the bicycle, about the vertical axis, zero when straight ahead, positive to the right
+-yP: lateral displacement (m) of the rear wheel contact point with respect to the centre line of the treadmill
+-yQ: lateral displacement (m) of the font wheel contact point with respect to the centre line of the treadmill
+-psiub: yaw angle (rad) of the upper body with respect to the bicycle, , about the vertical axis, zero when alligned straigth ahead with the bicycle positive to the right
+-phiub: lean angle (rad) of the upper body with respect to the bicycle, about the forward axis, zero when upright with respect to the bicycle, positive to the right.
+-thetaub: pitch angle (rad) of the upper body with respect to the bicycle, about the lateral axis,  zero when upright, positive when pitching forward,
+
+
+Notes:
+
+0) An example of Matlab script to plot some of the data from one experiment is: "ShowDatav3.m"
+
+1) all right and left are defined when heads up, looking in the forward direction, see also the sign definitions in Figure 2 from the Meijaard et al. 2007 bicycle benchmark paper.
+
+2) free cyling is at pull id = 0 and lasts for 60 seconds with zero pull force, cyclist were asked to closely follow the line on the middle of the treadmill
+
+3) the pull force is applied at t=0 and lasts for 0.3 seconds
+
+4) some pull forces are clockwise and others are anticlockwise in random order (we have 4 ropes attached to the handle bars), that data is not in this processed 'Data.mat' but can be made available if needed.
+
+5) On average 1+3+20 pulls: 1 at free cycling, 3 for a initial coarse search and 20 for the random staircase search.
+
+6) At three different forward speeds: 6, 12 and 18 km/h (not all participants could complete all speeds within the limited time, all participants started at the 6 km/h experiments)
+
+
+5) participant data
+
+total 24 participants:
+Group  # Gender   Age (y)    Height (m)  Weight (kg)
+Young 12 7 ♂, 5 ♀ 28.8 (4.1) 1.82 (0.10) 75.2 (13.4)
+Old   12 7 ♂, 5 ♀ 65.2 (4.9) 1.78 (0.09) 78.0 (11.6)
+
+participant_ID	gender	age	weight	length
+1	female	61	83.60	1.61
+2	male	30	89.00	1.87
+3	female	75	59.10	1.68
+4	male	65	85.10	1.89
+5	male	29	84.70	1.80
+6	male	27	76.40	1.89
+7	male	62	81.50	1.84
+8	male	68	89.50	1.73
+9	female	20	67.90	1.72
+10	female	61	66.80	1.72
+11	male	34	86.50	1.95
+12	female	30	63.20	1.68
+13	female	62	59.40	1.76
+14	male	65	81.60	1.85
+15	male	31	73.50	1.83
+16	female	24	60.60	1.68
+17	female	68	76.20	1.79
+18	male	73	73.60	1.73
+19	female	27	58.30	1.78
+20	female	32	68.20	1.84
+21	male	34	103.30	1.98
+22	male	27	70.20	1.87
+23	male	61	97.20	1.94
+24	male	61	82.70	1.84
