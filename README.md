@@ -11,7 +11,7 @@ attached as `reijne2025modeling.pdf`
 
 Most of the contents of Ch3 found it's way in the scientific publication:
 > Reijne, M.M., van der Meulen, F.H., van der Helm, F.C. and Schwab, A.L., 2025. A model based on cyclist fall experiments which predicts the maximum allowable handlebar disturbance from which a cyclist can recover balance. Accident Analysis & Prevention, 221, p.108159.
-attached as `reijne2025model.pdf`
+attached as [reijne2025model.pdf](https://github.com/arendschwab/CyclistFallExperiments/blob/main/reijne2025model.pdf)
 
 The Data is stored in a Matlab file `Datav3.mat` (2.1 GB) This large file can be found under the `Releases` in the right pane of the repository page and downloaded from there. Start by selecting `<> Code` in the top bar under the repository name bar.
 
