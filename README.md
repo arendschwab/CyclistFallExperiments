@@ -15,4 +15,4 @@ attached as [reijne2025model.pdf](https://github.com/arendschwab/CyclistFallExpe
 
 The Data is stored in a Matlab file `Datav3.mat` (2.1 GB) This large file can be found under the `Releases` in the right pane of the repository page and downloaded from there. Start by selecting `<> Code` in the top bar under the repository name bar.
 
-Data description for the Matlab file `Datav3.mat` (2.1 GB) can be found in `DataDictionaryDatav3.txt`
+Data description for the Matlab file `Datav3.mat` (2.1 GB) can be found in [DataDictionaryDatav3.txt](https://github.com/arendschwab/CyclistFallExperiments/blob/main/DataDictionaryDatav3.txt)
